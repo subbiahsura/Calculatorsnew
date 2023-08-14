@@ -8,6 +8,7 @@ body{
     background-color: #f1f6fa !important;
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 90px 0px 0px 0px;
 }
