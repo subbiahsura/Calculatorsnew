@@ -6,14 +6,13 @@ body{
 
 .container{
     background-color: #f1f6fa !important;
-    text-align: center;
     display: flex;
-    flex-direction: column;
+    text-align: center;
     justify-content: center;
     padding: 90px 0px 0px 0px;
 }
 .list{
-
+    width: fit-content;
     display: flex;
     flex-direction: column;
     background-color: #fff;
