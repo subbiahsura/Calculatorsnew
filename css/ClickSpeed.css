@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+body{
+    background-image: url("https://wallpapers.net/colored-speed-hd-wallpaper/download/3840x2160.jpg");
+    background-size: cover;
+    /* background-color: azure; */
+    font-family: 'Cairo', sans-serif;
+}
+.container{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:130px 0px 10px 0px;
+    gap: 20px;
+}
+.speedlabel{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.clickspeed{
+    padding: 30px 40px 20px 40px;
+    background-color: #FFF;
+    border-radius: 10px;
+}
+.buttonstimer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.timer
+{
+    padding: 10px;
+    background-color: aliceblue;
+}
+.btn-info:disabled{
+opacity: 0;
+}
+.speedcontent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.count{
+    text-align: center;
+}
+.btn-danger:disabled{
+    opacity: 0;
+}
+.homeico{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: #FF844B;
+    cursor: pointer;
+    box-shadow: 0px 3px 15px 2px #f1f6fa;
+    border-radius: 10px;
+}
+.homeico p, i{
+    margin: 0;
+}
+.homeico:hover{
+    transform: translate(0,-2px);
+}
+.homeico a{
+    text-decoration: none;
+    color:#4E7D96;
+}

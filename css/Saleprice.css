@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+body{
+    background-image: url("https://img.freepik.com/premium-vector/shopping-pattern-background-design_260839-17.jpg");
+    background-size: cover;
+    /* background-color: azure; */
+    font-family: 'Cairo', sans-serif;
+}
+.container{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:130px 0px 10px 0px;
+    gap: 20px;
+}
+.FindSaleprice{
+    background-color: #FFF;
+    padding: 30px 40px 40px 40px;
+    border-radius: 15px;
+}
+.originalprice{
+    display: flex;
+    flex-direction: column;
+}
+.discount{
+    display: flex;
+    flex-direction: column;
+}
+.saleprice{
+    background-color: aliceblue;
+    padding: 20px 0px 20px 0px;
+}
+.discountcontent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.salepricebutton{
+    text-align: center;
+}
+.homeico{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: #FF844B;
+    cursor: pointer;
+    box-shadow: 0px 3px 15px 2px #f1f6fa;
+    border-radius: 10px;
+}
+.homeico p, i{
+    margin: 0;
+}
+.homeico:hover{
+    transform: translate(0,-2px);
+}
+.homeico a{
+    text-decoration: none;
+    color:#4E7D96;
+}

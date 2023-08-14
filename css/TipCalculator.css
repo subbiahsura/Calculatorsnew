@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+body{
+    background-image: url("https://www.washingtonian.com/wp-content/uploads/2015/05/20150520.tippinglede-1215.jpg");
+    background-size: cover;
+    /* background-color: azure; */
+    font-family: 'Cairo', sans-serif;
+}
+.container{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:130px 0px 10px 0px;
+    gap: 20px;
+}
+.tipcalculator{
+    background-color: #FFF;
+    padding: 30px 40px 30px 40px;
+    border-radius: 15px;
+   }
+   .BillAmount{
+       display: flex;
+       flex-direction: column;
+       
+   }
+   .Service,.persons{
+       display: flex;
+       flex-direction: column;
+       padding: 10px 0px 0px 0px;
+   }
+   .calculate{
+       text-align: center;
+       padding-top: 20px;
+   }
+   .tipOutput{
+       background-color: aliceblue;
+       padding: 10px 20px 10px 20px;
+   }
+   input{
+    width: 250px;
+   }
+   .homeico{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: #FF844B;
+    cursor: pointer;
+    box-shadow: 0px 3px 15px 2px #f1f6fa;
+    border-radius: 10px;
+}
+.homeico p, i{
+    margin: 0;
+}
+.homeico:hover{
+    transform: translate(0,-2px);
+}
+.homeico a{
+    text-decoration: none;
+    color:#4E7D96;
+}

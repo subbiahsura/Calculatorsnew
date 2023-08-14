@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+body{
+    background-color: #f1f6fa !important;
+    font-family: 'Cairo', sans-serif;
+}
+.container{
+    text-align: center;
+    background-color: #f1f6fa !important;
+    display: flex;
+    flex-wrap: wrap;
+    padding:30px 0px 10px 0px;
+    gap: 20px;
+}
+.formlayout{
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 50px 20px;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+}
+.formcontent{
+    width: max-content;
+}
+.btn-success{
+    padding: 5px 20px 5px 20px;
+}
+.indiancurrency{
+    padding: 30px 0px 20px 0px;
+    width: fit-content;
+    
+}
+.label{
+    text-align: left;
+}
+.UsDollar{
+    padding: 30px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+}
+.BMICalculator{
+   
+    background-color: #FFF;
+    padding: 30px 40px 0px 40px;
+}
+.BmiContent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+.feilds{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 10px 0px 10px;
+}
+#Category{
+    margin: 0;
+    background-color: aliceblue;
+    padding: 20px 0px 20px 0px;
+}
+.Outputwindow{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.tipcalculator{
+ background-color: #FFF;
+ padding: 30px 40px 10px 40px;
+}
+.BillAmount{
+    display: flex;
+    flex-direction: column;
+    
+}
+.Service,.persons{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px 0px 0px;
+}
+.calculate{
+    text-align: center;
+    padding-top: 20px;
+}
+.tipOutput{
+    background-color: aliceblue;
+    padding: 10px 0px 10px 0px;
+}
+.FindSaleprice{
+    background-color: #FFF;
+    padding: 30px 40px 10px 40px;
+}
+.originalprice{
+    display: flex;
+    flex-direction: column;
+}
+.discount{
+    display: flex;
+    flex-direction: column;
+}
+.saleprice{
+    background-color: aliceblue;
+    padding: 20px 0px 20px 0px;
+}
+.discountcontent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.salepricebutton{
+    text-align: center;
+}
+.speedlabel{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.clickspeed{
+    padding: 30px 40px 20px 40px;
+    background-color: #FFF;
+}
+.buttonstimer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.timer
+{
+    padding: 10px;
+    background-color: aliceblue;
+}
+.btn-info:disabled{
+opacity: 0;
+}
+.speedcontent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.count{
+    text-align: center;
+}
+.btn-danger:disabled{
+    opacity: 0;
+}
