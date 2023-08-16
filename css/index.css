@@ -7,9 +7,10 @@ body{
 }
 
 .navbar{
+    border-top: 3px solid #ff3e41;
     background-color: #fff;
     display: flex;
-    height: fit-content;
+    
 }
 .navbar ul{
     width: 97%;
@@ -22,4 +23,12 @@ body{
     display: flex;
 color: #060315;
 text-decoration: none;
+}
+.navbar ul li a:hover{
+    color: #ff3e41;
+    border-bottom:2px solid #ff3e41;
+}
+.active{
+    border-bottom: 2px solid #ff3e41;
+    
 }
