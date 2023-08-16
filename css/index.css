@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+body{
+    background-color: #f1f6fa !important;
+}
+.container-fluid{
+    background-color: #f1f6fa !important;
+}
+
+.navbar{
+    background-color: #fff;
+    display: flex;
+    height: fit-content;
+}
+.navbar ul{
+    width: 97%;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    list-style-type: none;
+}
+.navbar ul li a{
+    display: flex;
+color: #060315;
+text-decoration: none;
+}
