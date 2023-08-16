@@ -17,8 +17,10 @@ link.addEventListener("click", e => {
     alert("Please enter some value");
    }else{
     alert("Login Successfull");
-    // alert("Navigating to index.html");
-    // window.location.replace("index.html")
+   
+    window.open("home.html");
+
+    
  }
 }
 

@@ -15,17 +15,21 @@ body{
     padding-bottom: 20px;
 }
 .navbar{
-    border-top: 3px solid #ff3e41;
+    border-top: 3px solid #f1f6fa;
     background-color: #fff;
     display: flex;
-    border-bottom: 1px solid #ededed;
+    flex-wrap: wrap;
+    border-bottom: 5px solid #ff3e41;
+    
     
 }
 .navbar ul{
     width: 97%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: right;
-    gap: 20px;
+    align-items: center;
+    gap: 30px;
     list-style-type: none;
 }
 .navbar ul li a{

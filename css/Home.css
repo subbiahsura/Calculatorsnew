@@ -11,6 +11,37 @@ body{
     justify-content: center;
     padding: 90px 0px 0px 0px;
 }
+.navbar{
+    border-top: 3px solid #f1f6fa;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 5px solid #ff3e41;
+    
+    
+}
+.navbar ul{
+    width: 97%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+    gap: 30px;
+    list-style-type: none;
+}
+.navbar ul li a{
+    display: flex;
+color: #060315;
+text-decoration: none;
+}
+.navbar ul li a:hover{
+    color: #ff3e41;
+    border-bottom:2px solid #ff3e41;
+}
+.active{
+    border-bottom: 2px solid #ff3e41;
+    
+}
 .list{
     width: fit-content;
     display: flex;
