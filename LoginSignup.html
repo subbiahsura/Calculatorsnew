@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/LoginSignupStyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <script src="https://kit.fontawesome.com/23a8e82f38.js" crossorigin="anonymous"></script>
+    <title>Login / Signup</title>
+</head>
+<body>
+    <div class="container-fluid">
+    <div class="navbar">
+        <ul>
+            <li><a  href="index.html"><i class="bi bi-house-door-fill"></i>&nbsp;Home</a></li>
+            <li><a href=""><i class="bi bi-building-fill"></i>&nbsp;About</a></li>
+            <li><a href=""><i class="bi bi-person-lines-fill"></i>&nbsp;Contact</a></li>
+            <li><a class="active" href="LoginSignup.html"><i class="bi bi-box-arrow-in-left"></i>&nbsp;Login</a></li>
+        </ul>
+    </div>
+    <div class="container forms">
+        <div class="form LoginForm">
+            <div class="logincontent">
+                <header>Login</header>
+                <form action="#">
+                    <div class="Email fields">  
+                        <i class="fa fa-envelope fa-color" id="envelope" aria-hidden="true"></i>
+                        <input type="email" id="loginemail" placeholder="Email" >
+                    </div>
+                    <div class="Password fields">  
+                        <i class="fa fa-lock fa-color" id="envelope" aria-hidden="true"></i>
+                        <input type="password" id="loginpass" placeholder="Password" >
+                    </div>
+                    <div class="forgottenpassword">
+                        <a href="">Forgot password ?</a>
+                    </div>
+                    <div class="loginbutton">
+                        <button class="btn btn-success" onclick="validatelogin()">Login</button>
+                    </div>
+                    <div class="line" ><p>or</p></div>
+                    <div class="socialmedias">
+                        <div class="google"><a><img src="/assets/GoogleIco.png" height="50px" width="50px"></a>Google</div>
+                        <div class="fb"><a><img src="/assets/facebook.png" height="35px" width="35px"></a>&nbsp;&nbsp;Facebook</div>  
+                    </div>
+                </form>
+                <div class="formlink">
+                    <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="form signupForm">
+            <div class="logincontent">
+                <header>SignUp</header>
+                <form action="#">
+                    <div class="Username fields">
+                        <i class="fa fa-user fa-color" id="envelope" aria-hidden="true"></i>
+                        <input type="text" id="username" placeholder="Username" >
+                    </div>
+                    <div class="Email fields">  
+                        <i class="fa fa-envelope fa-color" id="envelope" aria-hidden="true"></i>
+                        <input type="email" id="signupEmail" placeholder="Email" >
+                    </div>
+                    <div class="Password fields">  
+                        <i class="fa fa-lock fa-color" id="envelope" aria-hidden="true"></i>
+                        <input type="password" id="signupPass" placeholder="Password" class="password">
+                    </div>
+                    <div class="confirmpassword fields">
+                        <i class="fa fa-lock fa-color" aria-hidden="true"  id="envelope"></i>
+                        <input type="password" id="confirmpwd" placeholder="Confirm password" class="password">
+                        
+                    </div>
+                    <div class="loginbutton">
+                        <button class="btn btn-success" id="Signup">SignUp</button>
+                    </div>
+                </form>
+                <div class="formlink">
+                    <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="loginsignupscript.js"></script>
+</body>
+</html>

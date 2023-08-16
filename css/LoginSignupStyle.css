@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+body{
+    background-image: url("https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?w=1060&t=st=1691990994~exp=1691991594~hmac=cc5eef5eccbc1282c74255b419493caab6fdcc99bb993483dcc652f9e98b7303");
+   background-size: cover;
+    /* background-color: #f1f6fa !important; */
+    font-family: 'Cairo', sans-serif;
+}
+
+.container{
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.navbar{
+    border-top: 3px solid #ff3e41;
+    background-color: #fff;
+    display: flex;
+    border-bottom: 1px solid #ededed;
+    
+}
+.navbar ul{
+    width: 97%;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    list-style-type: none;
+}
+.navbar ul li a{
+    display: flex;
+color: #060315;
+text-decoration: none;
+}
+.navbar ul li a:hover{
+    color: #ff3e41;
+    border-bottom:2px solid #ff3e41;
+}
+.active{
+    border-bottom: 2px solid #ff3e41;
+    
+}
+header{
+    font-size: 28px;
+    font-weight: 600;
+    color: #4E7D96;
+    text-align: center;
+    padding: 0px 0px 10px 0px;
+}
+.form{
+    
+    position: absolute;
+    top: 110px;
+    display: flex;
+}
+input{
+    padding: 10px 10px 10px 10px;
+    width: 230px;
+    /* border: 1px solid black; */
+    border: none;
+    outline: none;
+    
+}
+.fields
+{
+    border: 1px solid #d6dadc;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+}
+.fa-color{
+    color: #4E7D96;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.LoginForm{
+    background-color: #FFF;
+   display: flex;
+   flex-wrap: wrap;
+   width: max-content;
+    padding: 40px 30px 40px 30px;
+    border-radius: 10px;
+}
+.formlink{
+    text-align: center;
+    color: #4E7D96;
+}
+.forgottenpassword a{
+    color: blue;
+    text-decoration: none;
+}
+.forgottenpassword a:hover{
+    color: rgb(0, 0, 192);
+    text-decoration: underline;
+}
+.signupForm{
+    background-color: #FFF;
+   display: flex;
+   flex-wrap: wrap;
+   width: max-content;
+   padding: 30px 40px 30px 40px;
+   border-radius: 10px;
+}
+.formlink{
+    padding-top: 20px;
+}
+#envelope{
+    padding: 10px;
+}
+.btn-success{
+    width: 100px;
+}
+.form.signupForm{
+    opacity: 0;
+    pointer-events: none;
+}
+.forms.show-signup .form.signupForm{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.forms.show-signup .form.LoginForm{
+    opacity: 0;
+    pointer-events: none;
+}
+.btn{
+    background-color: #FF844B;
+    border: none;
+}
+.passnotmatch{
+    border: 1px solid red;
+} 
+.socialmedias{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.google{
+    padding: 5px 30px 5px 10px;
+    box-shadow: 0px 7px 13px 3px rgb(251, 251, 251);
+    border-bottom: 1px solid rgb(251, 251, 251);
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .1s ease-out;
+    cursor: pointer;
+    color: #4E7D96;
+}
+.google:hover{
+    background-color: rgb(249, 254, 255);
+    transform: translate(0,-3px);
+}
+.fb{
+    padding: 15px 30px 10px 10px;
+    box-shadow: 0px 7px 13px 3px rgb(251, 251, 251);
+    border-bottom: 1px solid rgb(251, 251, 251);
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .1s ease-out;
+    cursor: pointer;
+    color: #4E7D96;
+}
+.fb:hover{
+    background-color: rgb(249, 254, 255);
+    transform: translate(0,-3px);
+}
+.line {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    background:
+      linear-gradient(#d6dadc 0 0) left,
+      linear-gradient(#d6dadc 0 0) right;
+    background-size: 45% 1px;
+    background-repeat: no-repeat;
+    align-items: center;
+  }
+  .line p{
+    margin-bottom:7px;
+    color: #4E7D96;
+  }
