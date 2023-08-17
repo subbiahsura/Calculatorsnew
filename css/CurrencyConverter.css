@@ -1,35 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
 
 body{
-    background-image: url("https://cdn.pixabay.com/photo/2016/11/23/00/33/blur-1851466_1280.jpg");
+    background-color: #f1f6fa;
     background-size: cover;
     font-family: 'Cairo', sans-serif;
+}
+.navbar{
+    border-top: 3px solid #f1f6fa;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 5px solid #ff3e41;
+    
+}
+.navbar ul{
+    width: 97%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    gap: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0px 10px 0px;
+}
+.navbar ul li a{
+    display: flex;
+color: #060315;
+text-decoration: none;
+
+
+}
+.navbar ul li a:hover{
+    color: #ff3e41;
+    border-bottom:2px solid #ff3e41;
+}
+
+.active{
+    border-bottom: 2px solid #ff3e41;
+    
+}
+@media screen and (max-width: 450px) {
+  .navbar{
+    display: none;
+  }
 }
 .container{
     text-align: center;
     justify-content: center;
+    padding:90px 0px 10px 0px;
+
+}
+.content{
     display: flex;
-    flex-wrap: wrap;
-    padding:130px 0px 10px 0px;
-    gap: 20px;
+    justify-content: center;
+}
+.image img{
+    display: flex;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom: 3px solid #ff3e41;
 }
 .formlayout{
     background-color: #FFF;
     display: flex;
     flex-direction: column;
-    padding: 30px 40px 10px 40px;
+    padding: 30px 20px 10px 20px;
     justify-content: center;
-    /* flex-wrap: wrap; */
     gap: 10px;
-    border-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: fit-content;
+    align-items: center;
+    border-bottom: 3px solid #ff3e41;
 }
 .formcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: max-content;
+    
 }
 .btn-success{
     padding: 5px 20px 5px 20px;
 }
 .indiancurrency{
+    text-align: center;
     padding: 30px 0px 20px 0px;
     width: fit-content;
     
@@ -41,12 +97,10 @@ body{
     padding: 10px 0px 20px 0px;
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
     gap: 10px;
 }
-input{
-    width: 250px;
-}
+
 .header{
     text-decoration: underline;
 }
@@ -55,7 +109,7 @@ input{
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    color: #FF844B;
+    color: #ff3e41;
     cursor: pointer;
     box-shadow: 0px 3px 15px 2px #f1f6fa;
     border-radius: 10px;
@@ -68,5 +122,5 @@ input{
 }
 .homeico a{
     text-decoration: none;
-    color:#4E7D96;
+    color:#ff3e41;
 }

@@ -1,22 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
 body{
-    background-image: url("https://img.freepik.com/premium-vector/shopping-pattern-background-design_260839-17.jpg");
-    background-size: cover;
+    background-color: #f1f6fa;
+   
     /* background-color: azure; */
     font-family: 'Cairo', sans-serif;
 }
+.navbar{
+    border-top: 3px solid #f1f6fa;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 5px solid #ff3e41;
+    
+}
+.navbar ul{
+    width: 97%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    gap: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0px 10px 0px;
+}
+.navbar ul li a{
+    display: flex;
+color: #060315;
+text-decoration: none;
+
+
+}
+.navbar ul li a:hover{
+    color: #ff3e41;
+    border-bottom:2px solid #ff3e41;
+}
+
+.active{
+    border-bottom: 2px solid #ff3e41;
+    
+}
+@media screen and (max-width: 450px) {
+  .navbar{
+    display: none;
+  }
+}
 .container{
+    padding:90px 0px 10px 0px;
+    gap: 20px;
+}
+.totalcontent{
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding:130px 0px 10px 0px;
-    gap: 20px;
+}
+.image img{
+    display: flex;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom: 3px solid #ff3e41;
 }
 .FindSaleprice{
     background-color: #FFF;
     padding: 30px 40px 40px 40px;
-    border-radius: 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom: 3px solid #ff3e41;
 }
 .originalprice{
     display: flex;
@@ -56,5 +106,5 @@ body{
 }
 .homeico a{
     text-decoration: none;
-    color:#4E7D96;
+    color:#ff3e41;
 }
