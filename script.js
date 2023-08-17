@@ -16,13 +16,13 @@ function showSlides() {
   setTimeout(showSlides, 2000); 
 }
 
-
+//currency Convertor
 function Convert(event) {
     event.preventDefault();
     
     var indianRupees = parseFloat(document.getElementById("indian").value);
-    if(isNaN(indianRupees) ){
-        document.getElementById("output").value = "Please Enter a valid Rupees";
+    if(!indianRupees ){
+        alert("Please enter some value");
     }else{
     var currency = document.getElementById("currencies").value;
     var dollar = 0.012;
@@ -125,3 +125,32 @@ function Increment(){
         countresult.value= clickcount;
     
 }
+var dropdown = document.getElementById("dropdown");
+dropdown.addEventListener("click", listitems);
+ function listitems(){
+    document.getElementById("dropdowncontent").style.display = "block";
+ }
+//  document.addEventListener("click", (e)=> {
+//     if (document.getElementById("dropdowncontent").style.display == "block") {
+//         document.getElementById("dropdowncontent").style.display = "none";
+//     }
+// });
+var closedropdown = document.getElementById("closedropdown");
+closedropdown.addEventListener("click" ,(e)=>{
+    e.preventDefault();
+    console.log("closed");
+    document.getElementById("dropdowncontent").style.display = "none";
+    e.stopPropagation();
+})
+
+var aboutlink = document.getElementById("aboutlink");
+aboutlink.addEventListener("click" , (e)=>{
+    e.preventDefault();
+   var targetpage = document.getElementById("TeamMembers");
+   var offsetTop = targetpage.getBoundingClientRect().top+ window.pageYOffset;
+   var offsetAmount = offsetTop - 80;
+   window.scrollTo({
+    top: offsetAmount,
+    behavior: "smooth"
+});
+})

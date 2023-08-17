@@ -52,10 +52,12 @@ text-decoration: none;
 }
 .content{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .image img{
     display: flex;
+    flex-wrap: wrap;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -65,7 +67,7 @@ text-decoration: none;
     background-color: #FFF;
     display: flex;
     flex-direction: column;
-    padding: 30px 20px 10px 20px;
+    padding: 30px 30px 10px 30px;
     justify-content: center;
     gap: 10px;
     border-top-right-radius: 20px;
@@ -123,4 +125,11 @@ text-decoration: none;
 .homeico a{
     text-decoration: none;
     color:#ff3e41;
+}
+input[type=number]{
+    width: 300px;
+}
+#output{
+    cursor: not-allowed;
+    
 }
