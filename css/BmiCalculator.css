@@ -83,6 +83,9 @@ text-decoration: none;
     gap: 30px;
     padding: 20px 10px 0px 10px;
 }
+input[type=text],[type=number]{
+    width: 250px;
+}
 #Category{
     margin: 0;
     background-color: aliceblue;

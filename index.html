@@ -10,11 +10,12 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="navbar">
+        <div class="navbar">   
             <ul>
+                <label><i class="bi bi-calculator"></i>&nbsp;DigiCalcs</label>
                 <li><a class="active" href="index.html"><i class="bi bi-house-door-fill"></i>&nbsp;Home</a></li>
                 <li><a href="" id="aboutlink"><i class="bi bi-building-fill"></i>&nbsp;About</a></li>
-                <li><a href=""><i class="bi bi-person-lines-fill"></i>&nbsp;Contact</a></li>
+                <li><a href="" id="contactlink"><i class="bi bi-person-lines-fill"></i>&nbsp;Contact</a></li>
                 <li><a href="LoginSignup.html"><i class="bi bi-box-arrow-in-left"></i>&nbsp;Login</a></li>
             </ul>
         </div>
@@ -36,7 +37,7 @@
             <p>The platform could provide a collection of specialized calculators for different mathematical disciplines</p>
             <p>DigiCalcs could also offer educational resources such as tutorials, guides, and explanations to help users understand the mathematical concepts behind the calculations.</p>
             <div class="twobuttons">
-                <button class="btn btn-danger">Calculate</button>
+                <button class="btn btn-danger" onclick="location.replace('LoginSignup.html')">Calculate</button>
                 <button class="btn btn-secondary">More</button>
             </div>
         </div>
@@ -113,6 +114,46 @@
                 </div>
                 
             </div>
+            <div class="contactUs">
+                <h2 id="contactus">Contact Us</h2>
+                <div class="contactcontent">
+                    <div class="address">
+                        <p><i class="bi bi-geo-alt-fill"></i>&nbsp;123 Starlight Avenue,<br>
+                            Galaxy City, Space Sector 42,<br>
+                            Outer Universe 12345<br>
+                            <span class="white"><i class="bi bi-envelope-fill"></i>&nbsp;Email: info@DigiCalcs.net<br>
+                            <i class="bi bi-telephone-fill"></i>&nbsp;Phone: +1 (555) 123-4567</span></p>
+                    </div>
+                    <div class="map">
+                        <div class="mapouter"><div class="gmap_canvas">
+                            <iframe src="https://maps.google.com/maps?q=university%20of%20san%20francisco&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=&amp;output=embed" 
+                            id="gmap_canvas" frameborder="0" scrolling="no" style="width: 270px; height: 270px;"
+                            ></iframe><style>.gmap_canvas{overflow:hidden;background:none!important;
+                            height:270px;width:270px;}</style></div></div>
+                    </div>
+                    <div class="contactform">
+                        <form action="" class="formcontolfeilds">
+                            <div class="contactEmail">
+                                <label>Email</label>
+                                <input type="email">
+                            </div> 
+                            <div class="contactcity">
+                                <label>City</label>
+                                <input type="text">
+                            </div> 
+                            <div class="contactcomments">
+                                <label>Comments</label>
+                                <textarea  rows="4" cols="20">
+                                    </textarea>
+                            </div> 
+                            <div class="contactButton">
+                                <button class="btn btn-danger sendbtn">Send</button>
+                            </div> 
+                        </form>
+                    </div>
+                </div>
+
+            </div><br>
             <div class="footer-basic"><footer>
                 <div class="social">
                     <a href="#"><i class="icon bi bi-instagram"></i></a>

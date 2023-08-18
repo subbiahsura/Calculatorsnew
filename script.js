@@ -119,6 +119,7 @@ function startTimer(){
 }
 var clickcount = 0;
 function Increment(){ 
+ 
     clickcount++;
     console.log(clickcount);
         var countresult = document.querySelector("#count") ;
@@ -153,4 +154,16 @@ aboutlink.addEventListener("click" , (e)=>{
     top: offsetAmount,
     behavior: "smooth"
 });
+})
+
+var contactlink = document.getElementById("contactlink");
+contactlink.addEventListener("click", (c)=>{
+    c.preventDefault();
+    var targetcontact= document.getElementById("contactus");
+    var topspace = targetcontact.getBoundingClientRect().top+window.pageXOffset;
+    var topamount = topspace-80;
+    window.scrollTo({
+        top:topamount,
+        behavior:"smooth"
+    }) ;
 })
