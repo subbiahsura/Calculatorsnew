@@ -13,12 +13,23 @@
         <div class="navbar">
             
             <ul>
+                <label><i class="bi bi-calculator"></i>&nbsp;DigiCalcs</label>
                 <li><a class="active" href="index.html"><i class="bi bi-house-door-fill"></i>&nbsp;Home</a></li>
-                <li><a href=""><i class="bi bi-building-fill"></i>&nbsp;About</a></li>
-                <li><a href=""><i class="bi bi-person-lines-fill"></i>&nbsp;Contact</a></li>
+                <li><a href="" id="aboutlink"><i class="bi bi-building-fill"></i>&nbsp;About</a></li>
+                <li><a href="" id="contactlink"><i class="bi bi-person-lines-fill"></i>&nbsp;Contact</a></li>
                 <li><a href="LoginSignup.html"><i class="bi bi-box-arrow-in-left"></i>&nbsp;Login</a></li>
             </ul>
         </div>
+        <div class="dropdown" id="dropdown" >
+            <button class="dropbtn" onclick="listitems()"><i class="bi bi-list"></i></button>
+            <div class="dropdown-content" id="dropdowncontent">
+            <a href="index.html"><i class="bi bi-house-door-fill"></i>&nbsp;Home</a></a>
+            <a href="index.html"><i class="bi bi-building-fill"></i>&nbsp;About</a>
+            <a href="#"><i class="bi bi-person-lines-fill"></i>&nbsp;Contact</a>
+            <a href="LoginSignup.html"><i class="bi bi-box-arrow-in-left"></i>&nbsp;Login</a>
+            <a href="#" id="closedropdown" onclick="closelist()"><i class="bi bi-x-lg"></i>&nbsp;Close</a>
+            </div>
+          </div>
     <div class="container">
         <div class="totalcontent">
             <div class="image">

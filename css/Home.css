@@ -32,7 +32,6 @@ body{
     border-top: 3px solid #f1f6fa;
     background-color: #fff;
     display: flex;
-    flex-wrap: wrap;
     border-bottom: 5px solid #ff3e41;
     margin: 0;
     
@@ -63,11 +62,7 @@ text-decoration: none;
     border-bottom: 2px solid #ff3e41;
     
 }
-@media only screen and (max-width: 525px) {
-  .navbar{
-    display: none;
-  }
-}
+
   .dropbtn {
     border: none;
     cursor: pointer;
@@ -81,7 +76,9 @@ text-decoration: none;
     .dropdown{
       display: block;
     }
-    
+    .navbar{
+      display: none;
+    }
   }
   
   .dropdown-content {

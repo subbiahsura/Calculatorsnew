@@ -1,10 +1,9 @@
 let slideIndex = 0;
 showSlides();
-
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
+ 
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
@@ -12,7 +11,6 @@ function showSlides() {
   if (slideIndex > slides.length) {slideIndex = 1}    
  
   slides[slideIndex-1].style.display = "block";  
-
   setTimeout(showSlides, 2000); 
 }
 
@@ -126,23 +124,18 @@ function Increment(){
         countresult.value= clickcount;
     
 }
-var dropdown = document.getElementById("dropdown");
-dropdown.addEventListener("click", listitems);
+// var dropdown = document.getElementById("dropdown");
+
+// dropdown.addEventListener("click", listitems);
  function listitems(){
-    document.getElementById("dropdowncontent").style.display = "block";
+    document.getElementById("dropdowncontent").style.display = "flex";
+    document.getElementById("dropdowncontent").style.flexDirection = "column";
+    console.log("Listed");
  }
-//  document.addEventListener("click", (e)=> {
-//     if (document.getElementById("dropdowncontent").style.display == "block") {
-//         document.getElementById("dropdowncontent").style.display = "none";
-//     }
-// });
-var closedropdown = document.getElementById("closedropdown");
-closedropdown.addEventListener("click" ,(e)=>{
-    e.preventDefault();
+ function closelist(){
     console.log("closed");
     document.getElementById("dropdowncontent").style.display = "none";
-    e.stopPropagation();
-})
+}
 
 var aboutlink = document.getElementById("aboutlink");
 aboutlink.addEventListener("click" , (e)=>{
