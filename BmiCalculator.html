@@ -40,15 +40,15 @@
             <h3>Check your BMI</h3>
             <div class="BmiContent">
                 <div class="feilds">
-                    <input type="number" id="height"  placeholder=" Height in meter">
-                    <input type="number" id="weight"  placeholder=" your Weight in Kg">
+                    <input type="number" id="height"  placeholder=" Height in meter" min="0">
+                    <input type="number" id="weight"  placeholder=" your Weight in Kg" min="0">
                 </div>
                 <div class="button">
-                    <button class="btn btn-danger">Reset</button>
+                    <button class="btn btn-danger" onclick="Resetall()">Reset</button>
                     <button class="btn btn-success" onclick="CheckBMI()">Check BMI</button>
                 </div>
                 <div class="Outputwindow">
-                <input type="text" id="result">
+                <input type="text" id="result" readonly>
                 <p id="Category"></p>
             </div>
             <div class="homeico">

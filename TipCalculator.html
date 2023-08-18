@@ -41,7 +41,7 @@
             <div class="calculatorcontent">
                 <div class="BillAmount">
                     <label>Enter Bill amount</label>
-                    <input type="number" id="BillAmount">
+                    <input type="number" id="BillAmount" min="0">
                 </div>
                 <div class="Service">
                     <label>How was the service</label>
@@ -56,7 +56,7 @@
                 </div>
                 <div class="persons">
                     <label>Number Of persons</label>
-                    <input type="number"  id="noofPersons">
+                    <input type="number"  id="noofPersons" min="0">
                 </div>
                 <div class="calculate">
                     <button class="btn btn-success" onclick="calculateTip()">Calculate</button>

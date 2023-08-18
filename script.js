@@ -56,6 +56,13 @@ function CheckBMI(){
     document.getElementById("Category").innerHTML=bmicategory;
     
 }
+
+function Resetall(){
+    document.getElementById("height").value=0;
+    document.getElementById("weight").value=0;
+    document.getElementById("result").value="";
+    document.getElementById("Category").innerHTML="";
+}
 function  checkBmiCategory(bmi){
     if (bmi < 18.5) {
         return "Underweight , please Try to Eat";

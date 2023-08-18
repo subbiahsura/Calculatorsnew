@@ -251,6 +251,9 @@ text-decoration: none;
   .address p{
     text-align: left;
     line-height: 40px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
   }
   .address .bi{
     font-size: 20px;
@@ -261,6 +264,9 @@ text-decoration: none;
     align-items: center;
     gap: 20px;
   }
+  .contactform input,textarea{
+    outline: none;
+  } 
   .formcontolfeilds label{
     text-align: left;
     
@@ -285,7 +291,11 @@ text-decoration: none;
   .contactButton{
     text-align: right;
   }
-
+.contactform{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
   .mapouter iframe{
     border-radius: 10px;
   }
