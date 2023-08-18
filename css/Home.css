@@ -5,19 +5,36 @@ body{
 }
 
 .container{
-    background-color: #f1f6fa !important;
-    display: flex;
-    text-align: center;
-    justify-content: center;
+  text-align: center;
     padding: 90px 0px 0px 0px;
 }
+.container-fluid{
+  background-color: #f1f6fa !important;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+}
+.navbar ul label{
+  font-family: 'Josefin Sans', sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  background-color: #ff3e41;
+  padding: 15px 30px 15px 30px;
+  font-size: 20px;
+  color:white;
+  font-weight: bold;
+
+}
+
 .navbar{
     border-top: 3px solid #f1f6fa;
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
     border-bottom: 5px solid #ff3e41;
-    
+    margin: 0;
     
 }
 .navbar ul{
@@ -25,39 +42,42 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: right;
-    align-items: center;
     gap: 30px;
     list-style-type: none;
+    margin: 0;
+    padding: 10px 0px 10px 0px;
 }
 .navbar ul li a{
     display: flex;
 color: #060315;
 text-decoration: none;
+
+
 }
 .navbar ul li a:hover{
     color: #ff3e41;
     border-bottom:2px solid #ff3e41;
 }
+
 .active{
     border-bottom: 2px solid #ff3e41;
     
 }
-
-@media screen and (max-width: 450px) {
-    .navbar{
-      display: none;
-    }
+@media only screen and (max-width: 525px) {
+  .navbar{
+    display: none;
   }
-.dropbtn {
+}
+  .dropbtn {
     border: none;
     cursor: pointer;
   }
   
   .dropdown {
-    position: absolute;
+    position: fixed;
     display: none;
   }
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: 525px) {
     .dropdown{
       display: block;
     }
@@ -68,7 +88,7 @@ text-decoration: none;
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    width: fit-content;
+    width: 150px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
