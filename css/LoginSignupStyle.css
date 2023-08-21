@@ -22,6 +22,18 @@ body{
     
     
 }
+.navbar ul label{
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    background-color: #ff3e41;
+    padding: 15px 30px 15px 30px;
+    font-size: 20px;
+    color:white;
+    font-weight: bold;
+  
+  }
 .navbar ul{
     width: 97%;
     display: flex;

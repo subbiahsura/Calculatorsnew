@@ -14,10 +14,7 @@ body{
   background-color: #f1f6fa !important;
   display: flex;
   flex-direction: column;
-
 }
-
-
 .navbar{
   border-top: 3px solid #f1f6fa;
   background-color: #fff;
@@ -113,10 +110,6 @@ text-decoration: none;
 #closedropdown i{
   color: #fff;
 }
-@media screen and (max-width: 525px) {
-
-}
-  
 .list{
     width: fit-content;
     display: flex;
